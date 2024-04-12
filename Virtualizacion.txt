@@ -1,0 +1,81 @@
+contenedor:
+
+forma de enpaquetar nuestras aplicaciones con todas sus dependencias(incluyendo archivos de configuracion)
+
+los contenedores son PORTABLES
+Es decir, sin faciles de compartir entre - desarrolladores y equipo de operaciones
+
+
+
+se almacenan en un repositorios de contenedores
+estos pueden ser:
+Publicos: DockerHub(dentro podemos encontrar aplicaciones como: NodeJS, Pytho, Postgres, SQL, GOlang)
+Privados:
+
+
+
+imagen es un:
+empaquetado---> que contiene: las dependencias, el codigo y esto finalmente es lo que se comparte 
+
+
+
+entonces, que es un container?
+son capas, tras capas, tras capas de imagenes
+
+
+
+
+Vistualizacion;
+**************
+
+compuerto por:
+Hardware
+Kernel --> es el SO
+Aplicaciones
+
+
+en el caso de DOCKER
+'''''''''''''''''''''
+Hardware	
+Kernel 	
+Aplicaciones	|--> solo se virtualizan las aplicaciones
+
+
+
+Tipos de vitualizaciones:
+*************************	Existe el concepto de Host y Cliente
+				Host: es el sistema operativo que corre en nuestro computador
+				Cliente: son la maquina o maquinaS virtual que instalemos encima
+
+				Ej:
+				Host: Windows
+				Clientes: Ubuntu, Debian, Suse
+
+Para virtualizacion ( """CASO DE DOCKER"""
+Lo que tiene este tipo de vistualizacion es que "El Host intenta entregar la mayor cantidad de acceso
+a su hardware, a los clientes"
+)
+
+Virtualizacion Parcial(
+En esta, "algunos de los componentes del Hardware se virtualizan para el Cliente"
+)
+
+Virtualizacion Completa(
+Donde absolutamente todos los componenetes del Hardware se virtualizan para el Cliente
+)
+
+
+
+Que es docker desktop?
+
+Es una maquina virtual, que corre linux y permite ejecutar containers
+a demas, permite acceder al sistema de archivos y tambien a la red(tanto interna como externa)
+
+
+Herramienteas de Docker
+*DockerCompose
+*CLI(commend line interface)
+
+
+
+Docker puede correr de manera nativa en windows con la herramienta WSL2 (windows subsystem for Linux)
